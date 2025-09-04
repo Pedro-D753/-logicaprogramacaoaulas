@@ -1,14 +1,19 @@
 # atividade forca
-
+# bibliotecas
 import random
+# importa a biblitoeca pra "sortear" n texto json a palavra escolhida de acordo com o tema
 import os
 import json
+# importa o json que está armazenando as palavras do json
 
-with open("temas.json", "r", encoding="utf-8") as f:
-    temas = json.load(f)
+with open("temas.json", "r", encoding="utf-8") as f: 
+    # abre o arquivo json
+    temas = json.load(f) 
+    # lê o arquivo json
 
 while True:
     print('--- FORCA - TEMAS ---')
+    # menu 
     print('1 - Animais')
     print('2 - Times de Futebol')
     print('3 - Objetos de casa')
@@ -18,6 +23,7 @@ while True:
     if tema == '1':
         def escolher_palavras():
             return random.choice(temas["Animais"]).lower()
+            #escolhe palavra aleatória dentro da lista json
 
     elif tema == '2':
         def escolher_palavras():
@@ -29,6 +35,7 @@ while True:
         
     elif tema == "4":
          print('Programa encerrado. Até logo!')
+         #Fim no programa
          break
 
     else:
@@ -40,7 +47,7 @@ while True:
         letras_corretas = []
         letras_erradas = []
         tentativas = 6
-
+        # lógica do karython
         while True:
             palavra_escondida = ''
             for letra in palavra:
@@ -65,6 +72,7 @@ while True:
             if letra_usuario in palavra:
                 print('Letra correta!')
                 letras_corretas.append(letra_usuario)
+                # append adiciona um elemento ao final da lista
             else:
                 print('Letra incorreta!')
                 letras_erradas.append(letra_usuario)
@@ -74,8 +82,3 @@ while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         print('Bem vindo ao jogo da forca')
         jogar_forca()
-
-        
-
-     
-
