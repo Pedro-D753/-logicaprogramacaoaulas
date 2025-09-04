@@ -1,7 +1,7 @@
 # atividade forca
 # bibliotecas
 import random
-# importa a biblitoeca pra "sortear" n texto json a palavra escolhida de acordo com o tema
+# importa a biblitoeca pra "sortear" no arquivo json a palavra escolhida de acordo com o tema
 import os
 import json
 # importa o json que está armazenando as palavras do json
