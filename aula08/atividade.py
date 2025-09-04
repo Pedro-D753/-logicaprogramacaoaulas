@@ -1,7 +1,7 @@
 # atividade forca
 # bibliotecas
 import random
-# importa a biblitoeca pra "sortear" no arquivo json a palavra escolhida de acordo com o tema
+# importa a biblitoeca pra "sortear" no arquivo
 import os
 import json
 # importa o json que está armazenando as palavras do json
@@ -23,7 +23,7 @@ while True:
     if tema == '1':
         def escolher_palavras():
             return random.choice(temas["Animais"]).lower()
-            #escolhe palavra aleatória dentro da lista json
+            #escolhe palavra de forma aleat´roia de acordo com o tema dentro da lista json
 
     elif tema == '2':
         def escolher_palavras():
