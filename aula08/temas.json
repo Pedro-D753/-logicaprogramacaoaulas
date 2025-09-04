@@ -1,0 +1,18 @@
+{
+  "Times": [
+    "flamengo", "paysandu", "remo", "mirassol", "bahia", "cruzeiro", "sport", "santos", "figueirense",
+    "avai", "vasco", "america", "fortaleza", "goias", "palmeiras", "corinthians", "gremio",
+    "nautico", "vitoria", "ceara", "sc internacional"
+  ],
+
+  "Animais": [
+    "baleia", "cachorro", "gato", "rato",
+    "borboleta", "tubarão", "passarinho", "cobra",
+    "leão", "girafa", "zebra", "tartaruga", "arara", "vaca",
+    "cavalo", "coelho", "elefante", "panda", "tatu"
+  ],
+
+  "Objetos": [
+    "Cama", "Cozinha", "Canil", "Banheiro", "Carro", "Bola", "Mesa", "Televisao", "Lampada"
+  ]
+}
