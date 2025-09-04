@@ -12,7 +12,8 @@ while True:
     print('1 - Animais')
     print('2 - Times de Futebol')
     print('3 - Objetos de casa')
-
+    print('Digite ''4'' para encerrar o programa.')
+    
     tema = input('Escolha um tema: ')
     if tema == '1':
         def escolher_palavras():
@@ -25,6 +26,10 @@ while True:
     elif tema == '3':
         def escolher_palavras():
             return random.choice(temas["Objetos"]).lower()
+        
+    elif tema == "4":
+         print('Programa encerrado. Até logo!')
+         break
 
     else:
         print('Opção inválida!')
